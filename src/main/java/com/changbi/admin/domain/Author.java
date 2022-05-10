@@ -6,20 +6,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
+
 /**
- * 메뉴코드 entity
+ * 저자정보 Entity
  * */
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class MenuCode {
+public class Author {
 
-    private int menuCode;
-    private String menuName;
-    private int menuDepth;
-    private int upperMenuCode;
-    private char useYn;
-    private String menuUrl;
+    private int authorId;
+    private String authorName;
+    private String authorContent;
+    private String authorThumbnailPath;
 
 }
