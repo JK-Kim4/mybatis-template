@@ -1,7 +1,7 @@
 package com.changbi.admin.controller;
 
-import com.changbi.admin.domain.Book;
-import com.changbi.admin.service.BookService;
+import com.changbi.admin.domain.Notice;
+import com.changbi.admin.service.NoticeService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -13,15 +13,14 @@ import java.util.List;
 @Controller
 @AllArgsConstructor
 @Slf4j
-public class BookController {
+public class NoticeController {
 
-    private final BookService bookService;
+    private final NoticeService noticeService;
 
-    @GetMapping("/books")
+
+    @GetMapping("/notices")
     @ResponseBody
-    public List<Book> selectAll(){
-
-        return bookService.selectAll();
-
+    public List<Notice> selectAll(){
+        return noticeService.selectAll();
     }
 }

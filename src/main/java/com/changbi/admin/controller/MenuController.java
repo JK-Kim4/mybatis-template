@@ -17,7 +17,7 @@ public class MenuController {
 
     private final MenuService menuService;
 
-    @GetMapping("/select/menu/all")
+    @GetMapping("/menus")
     @ResponseBody
     public List<MenuCode> selectAllCodes(){
         return menuService.selectAllCodes();
