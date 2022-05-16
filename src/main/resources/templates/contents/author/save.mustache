@@ -1,0 +1,56 @@
+{{>layouts/header}}
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> 저자 등록 </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0);" onclick="move_location('/author/list')">저자 목록</a></li>
+                <li class="breadcrumb-item active" aria-current="page">저자 등록</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">저자 등록</h4>
+                    <p class="card-description"> 저자 등록. </p>
+                    <form id="authorInsertFrm" enctype="multipart/form-data" method="post">
+                        <div class="form-group">
+                            <label for="name1">이름</label>
+                            <input type="text" class="form-control" id="name1" name="name1" placeholder="한글 이름을 입력해 주세요." required >
+                        </div>
+                        <div class="form-group">
+                            <label for="name2">이름 ( 한자 )</label>
+                            <input type="text" class="form-control" name="name2" id="name2">
+                        </div>
+                        <div class="form-group">
+                            <label for="name3">이름 ( 영문 )</label>
+                            <input type="text" class="form-control" name="name3" id="name3">
+                        </div>
+                        <div class="form-group">
+                            <label for="content">저자 설명</label>
+                            <textarea class="form-control" name="description" id="description" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>저자 프로필 이미지</label>
+                            <input type="file" name="authImgUrl" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                                <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                                <input type="hidden" id="imgUrl" name="imgUrl" value="testImg">
+                                <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                          </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mr-2" id="submitBtn">Submit</button>
+                        <button type="button" class="btn btn-dark" onclick="javascript:window.history.back()">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/cms/author/js/author.js"></script>
+<!-- content-wrapper ends -->
+{{>layouts/footer}}
