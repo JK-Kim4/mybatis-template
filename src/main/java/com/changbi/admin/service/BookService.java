@@ -13,7 +13,7 @@ public class BookService {
 
     private final BookRepository bookRepository;
 
-    public List<Book> selectAll(){
-        return bookRepository.selectAll();
+    public List<Book> selectAllBooks(){
+        return bookRepository.selectAllBooks();
     }
 }

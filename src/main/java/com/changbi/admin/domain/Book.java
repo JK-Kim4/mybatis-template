@@ -23,7 +23,7 @@ public class Book {
     private int bookPages;
     private String bookSeries;
     private String bookIsbn;
-    private LocalDateTime bookPublishDate;
+    private String bookPublishDate;
     private String bookSize;
     private String bookPrice;
     private String bookIndex;

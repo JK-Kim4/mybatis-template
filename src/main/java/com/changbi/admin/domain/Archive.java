@@ -20,8 +20,8 @@ public class Archive {
     private int archiveId;
     private String archiveTitle;
     private String archiveContent;
-    private LocalDateTime regDate;
-    private LocalDateTime modDate;
+    private String regDate;
+    private String modDate;
     private int regUser;
 
 }

@@ -11,7 +11,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/changbi?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://118.67.142.151:3306/changbi?characterEncoding=UTF-8&useTimezone=true&serverTimezone=Asia/Seoul
     username: dev
     password: whddhks12.
 
@@ -21,4 +21,10 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 
+
+cloud:
+  ncp:
+    credentials:
+      access-key: aixST8b7k6LrNXweHNyy
+      secret-key: FCjrVLM8aNhk1st2SE4s1bh7oXMxJC9Nsj8H7L70
 

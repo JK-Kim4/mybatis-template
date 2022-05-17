@@ -19,8 +19,8 @@ public class Notice {
     private int noticeId;
     private String noticeTitle;
     private String noticeContent;
-    private LocalDateTime regDate;
-    private LocalDateTime modDate;
+    private String regDate;
+    private String modDate;
     private int regUser;
 
 }
