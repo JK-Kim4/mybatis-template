@@ -39,6 +39,9 @@ dependencies {
     //ncloud object storage
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
     implementation 'com.amazonaws:aws-java-sdk-s3'
+
+    //pagination ( pageHelper )
+    implementation group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.2.10'
 }
 
 tasks.named('test') {
