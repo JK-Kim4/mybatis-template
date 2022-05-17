@@ -17,8 +17,11 @@ import lombok.Setter;
 public class Author {
 
     private int authorId;
-    private String authorName;
+    private String authorKrName;
+    private String authorChName;
+    private String authorEnName;
     private String authorContent;
     private String authorThumbnailPath;
+
 
 }
