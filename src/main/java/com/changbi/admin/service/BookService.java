@@ -1,7 +1,7 @@
 package com.changbi.admin.service;
 
 import com.changbi.admin.domain.Book;
-import com.changbi.admin.mapper.BookRepository;
+import com.changbi.admin.mapper.mysql.BookRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

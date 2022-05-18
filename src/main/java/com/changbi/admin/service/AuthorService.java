@@ -1,7 +1,7 @@
 package com.changbi.admin.service;
 
 import com.changbi.admin.domain.Author;
-import com.changbi.admin.mapper.AuthorRepository;
+import com.changbi.admin.mapper.mysql.AuthorRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

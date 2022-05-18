@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.changbi.admin.mapper.NoticeRepository">
+<mapper namespace="com.changbi.admin.mapper.mysql.ArchiveRepository">
 
-    <select id="selectAll" resultType="Notice">
+    <select id="selectAll" resultType="Archive">
         SELECT *
-        FROM notice
+        FROM archive
     </select>
 
 </mapper>

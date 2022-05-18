@@ -1,7 +1,7 @@
 package com.changbi.admin.service;
 
 import com.changbi.admin.domain.MenuCode;
-import com.changbi.admin.mapper.MenuRepository;
+import com.changbi.admin.mapper.mysql.MenuRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

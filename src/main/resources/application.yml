@@ -8,6 +8,5 @@ spring:
 
 mybatis:
   type-aliases-package: com.changbi.admin.domain
-  mapper-locations: classpath:mappers/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true

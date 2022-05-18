@@ -1,4 +1,4 @@
-package com.changbi.admin.mapper;
+package com.changbi.admin.mapper.mysql;
 
 import com.changbi.admin.domain.MenuCode;
 import org.apache.ibatis.annotations.Mapper;

@@ -2,11 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.changbi.admin.mapper.BookRepository">
+<mapper namespace="com.changbi.admin.mapper.mysql.AuthorRepository">
 
-    <select id="selectAllBooks" resultType="Book">
+    <select id="selectAllAuthors" resultType="Author">
         SELECT *
-        FROM book
+        FROM author
+        ORDER BY author_id DESC
     </select>
 
 </mapper>

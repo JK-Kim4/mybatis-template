@@ -1,7 +1,7 @@
 package com.changbi.admin.service;
 
 import com.changbi.admin.domain.Notice;
-import com.changbi.admin.mapper.NoticeRepository;
+import com.changbi.admin.mapper.mysql.NoticeRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
