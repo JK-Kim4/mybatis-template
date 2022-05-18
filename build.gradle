@@ -24,10 +24,13 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    //DBMS
+    //DBMS:mysql
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     runtimeOnly 'mysql:mysql-connector-java'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+
+    //DBMS:oracle
+    runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 
     //mustache
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
@@ -40,8 +43,8 @@ dependencies {
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
     implementation 'com.amazonaws:aws-java-sdk-s3'
 
-    //pagination ( pageHelper )
-    implementation group: 'com.github.pagehelper', name: 'pagehelper-spring-boot-starter', version: '1.2.10'
+
+
 }
 
 tasks.named('test') {
