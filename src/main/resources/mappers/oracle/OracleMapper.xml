@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.changbi.admin.mapper.oracle.OracleRepository">
+
+    <resultMap id="detail" type="HashMap">
+        <id column="BOOKCODE" property="bookCode"/>
+        <id column="BOOKNAME" property="bookName"/>
+        <id column="ISBN" property="isbn"/>
+        <id column="FIRSTEDITIONDATE" property="firstEditionDate"/>
+        <id column="PAGENUMBER" property="pageNumber"/>
+        <id column="LISTPRICE" property="listPrice"/>
+    </resultMap>
+
+    <select id="getBookDetail" resultMap="detail">
+        SELECT
+               BOOKCODE,
+               BOOKNAME,
+               ISBN,
+               FIRSTEDITIONDATE,
+               PAGENUMBER,
+               LISTPRICE
+        FROM changbi.G_BOOKCODE
+        WHERE BOOKNAME LIKE '%'||#{bookName}||'%'
+        ORDER BY BookName ASC
+    </select>
+</mapper>
