@@ -6,7 +6,3 @@ spring:
     active: loc
     #active: dev
 
-mybatis:
-  type-aliases-package: com.changbi.admin.domain
-  configuration:
-    map-underscore-to-camel-case: true
