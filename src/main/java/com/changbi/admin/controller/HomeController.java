@@ -23,11 +23,11 @@ public class HomeController {
         return "layouts/main";
     }
 
-    /*login 페이지 우회*/
-    @GetMapping("/login")
+    /*login 페이지 우회*//*
+    @GetMapping("/test/login")
     public String login(){
         return "contents/user/login";
-    }
+    }*/
 
     /*저자 목록 페이지*/
     @GetMapping("/authors")

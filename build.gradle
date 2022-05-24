@@ -24,6 +24,9 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
+    //spring security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
     //DBMS:mysql
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     runtimeOnly 'mysql:mysql-connector-java'
@@ -43,7 +46,6 @@ dependencies {
     //ncloud object storage
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
     implementation 'com.amazonaws:aws-java-sdk-s3'
-
 
 
 }

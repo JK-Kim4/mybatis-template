@@ -13,6 +13,11 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
+
+/**
+ * Sub Database
+ * 도서 상세 정보 조회를 위한 Oracle Database 연동
+ * */
 @Configuration
 @MapperScan(value = "com.changbi.admin.mapper.oracle", sqlSessionFactoryRef = "oracleSqlSessionFactory")
 public class OracleConfig {

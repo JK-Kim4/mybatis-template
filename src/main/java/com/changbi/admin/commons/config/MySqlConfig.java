@@ -14,6 +14,10 @@ import org.springframework.context.annotation.Primary;
 
 import javax.sql.DataSource;
 
+
+/**
+ * Primary Database
+ * */
 @Configuration
 @MapperScan(value = "com.changbi.admin.mapper.mysql", sqlSessionFactoryRef = "mysqlSqlSessionFactory")
 public class MySqlConfig {

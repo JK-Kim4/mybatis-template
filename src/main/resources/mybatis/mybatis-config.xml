@@ -13,6 +13,7 @@
         <typeAlias type="com.changbi.admin.domain.Book" alias="Book"/>
         <typeAlias type="com.changbi.admin.domain.MenuCode" alias="MenuCode"/>
         <typeAlias type="com.changbi.admin.domain.Notice" alias="Notice"/>
+        <typeAlias type="com.changbi.admin.domain.User" alias="User"/>
     </typeAliases>
 
 </configuration>
