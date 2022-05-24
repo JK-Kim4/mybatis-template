@@ -25,7 +25,7 @@ public class UserController {
     /*회원가입 페이지*/
     @GetMapping(value = "/signUp")
     public String signUp(){
-        return "contents/user/signup";
+        return "contents/user/sign-up";
     }
 
     /*로그인 실패*/
